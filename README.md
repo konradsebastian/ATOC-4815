@@ -31,3 +31,8 @@ We're sticking with conda/mamba for this class because several packages we rely 
 (cartopy, pyhdf, netCDF4) depend on compiled, non-Python libraries (GEOS, PROJ, HDF)
 that conda-forge builds and manages far more reliably across Windows/Mac/Linux than a
 pure-pip resolver. Worth knowing they exist for your own projects later.
+
+## Code in this repo
+
+`code/` holds the lecture Python examples referenced in class (not homework solutions, not
+grades, not student data — those stay on Canvas only).
