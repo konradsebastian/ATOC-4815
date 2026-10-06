@@ -9,7 +9,7 @@ the official/graded site for assignments and grades.
 ```
 git clone https://github.com/konradsebastian/ATOC-4815.git
 cd ATOC-4815
-mamba env create -f environment.yml      # or: conda env create -f environment.yml
+conda env create -f environment.yml      # have mamba? it's faster: mamba env create -f environment.yml
 conda activate atoc4815
 ```
 
