@@ -2,10 +2,10 @@
 # One environment for everything we use from here through the end of the semester
 # (covers what we've already installed ad hoc, plus xarray and the rest of the 2024/2026 course code).
 #
-# Create it:   mamba env create -f environment.yml      (or: conda env create -f environment.yml)
+# Create it:   conda env create -f environment.yml      (if you have mamba installed, it's faster: mamba env create -f environment.yml)
 # Activate it: conda activate atoc4815
 # Update it later in the semester (after a `git pull`):
-#              mamba env update -f environment.yml --prune
+#              conda env update -f environment.yml --prune
 
 name: atoc4815
 channels:
@@ -25,7 +25,6 @@ dependencies:
   - pyproj
   - eofs
   - pysolar
-  - python-soundfile
   - spectral
   - jupyterlab
   - notebook
@@ -33,3 +32,5 @@ dependencies:
   - spyder
   - spyder-kernels
   - pip
+  - pip:
+      - soundfile
