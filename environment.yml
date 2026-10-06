@@ -30,4 +30,6 @@ dependencies:
   - jupyterlab
   - notebook
   - ipython
+  - spyder
+  - spyder-kernels
   - pip
