@@ -7,8 +7,8 @@ the official/graded site for assignments and grades.
 ## Get the environment (do this once)
 
 ```
-git clone <REPO-URL-HERE> atoc4815-fall2026
-cd atoc4815-fall2026
+git clone https://github.com/konradsebastian/ATOC-4815.git
+cd ATOC-4815
 mamba env create -f environment.yml      # or: conda env create -f environment.yml
 conda activate atoc4815
 ```
