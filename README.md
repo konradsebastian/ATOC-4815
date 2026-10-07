@@ -16,6 +16,24 @@ conda activate atoc4815
 If you don't have mamba/conda yet, install Miniforge first (Windows/Mac/Linux):
 https://github.com/conda-forge/miniforge
 
+### Mac + Anaconda Navigator users: one extra step
+
+If you plan to launch Jupyter Notebook by clicking "Launch" in Anaconda Navigator
+(rather than typing `jupyter notebook` yourself), run this once, right after the
+`conda env create` step above:
+
+```
+bash fix_navigator_mac.sh
+```
+
+Without it, Navigator's Notebook button will fail with an error like "The file
+.../atoc4815/bin/jupyter_mac.command does not exist." That's because our environment
+installs `notebook` from conda-forge (for the best Apple-Silicon support), and
+conda-forge's build doesn't include the small launcher script Navigator looks for the
+way Anaconda's own build does -- `notebook` itself works fine either way. The script
+just adds that one file back. If you're launching from a terminal instead (`jupyter
+notebook` or `jupyter lab`), you don't need this step at all.
+
 ## Staying up to date
 
 Whenever new material is pushed here, just pull it:
