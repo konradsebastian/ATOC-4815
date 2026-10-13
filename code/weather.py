@@ -67,7 +67,7 @@ class WEATHER:
                 self.doy  = jday0
                 self.date = date
                 self.t2m  = [np.nan,np.nan,np.nan]
-                self.frc  = [jday0,jday+0.5,jday0+1]
+                self.frc  = [jday0,jday0+0.5,jday0+1]
         except:
             if verbose: print("Requested date does not exist: "+date,flush=True)
     def plot(self):
